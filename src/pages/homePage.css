@@ -1,0 +1,38 @@
+.Home-header {
+    position: relative;
+    left: 30px;
+    top: 15px;
+}
+p.a {
+    position: relative;
+    left: 30px;
+    top: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 30px;
+}
+p.b {
+    position: relative;
+    left: 30px;
+    top: 5px;
+    padding-right: 50%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+p.c {
+    position: relative;
+    left: 30px;
+    top: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 30px;
+}
+p.d {
+    position: relative;
+    left: 30px;
+    top: 5px;
+    padding-right: 4%;
+    text-align: justify;
+    text-justify: inter-word;
+}
