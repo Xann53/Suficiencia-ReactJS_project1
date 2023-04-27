@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
 import './homePage.css';
+import HomeHead from './homePageHeader';
+import HomeBody from './homePageBody';
 
-class Home extends Component {
-    render() { 
-        return (
-            <div className='Home-header'>
-                <h1>HOMEPAGE</h1>
-                <p>This is a sample homepage by Xannetz Suficiencia</p>
-            </div>
-        );
-    }
-}
- 
-export default Home;
+function Home() {
+    return (
+      <>
+        <div>
+          <header className="App-header">
+            <HomeHead />
+          </header>
+        </div>
+        <div class='b'></div>
+        <div class='c'></div>
+        <div class='bg'><HomeBody /></div>
+      </>
+    );
+  }
+  
+  export default Home;
+  
