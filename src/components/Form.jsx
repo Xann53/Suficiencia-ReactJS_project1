@@ -1,15 +1,21 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './Component.css';
+import { useState } from 'react';
 
 function BasicExample() {
+  const [emailAddress, setEmailAddress] = useState('');
+  const [message, setMessage] = useState('');
+  const [message2, setMessage2] = useState('');
+
   return (
     <Form className='Form-Style'>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Control type="email" placeholder="Enter email" onChange={(e) => setEmailAddress('Your e-mail is: ' + e.target.value)} />
         <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
+          Please enter your email here.
+          <h6>{emailAddress}</h6>
         </Form.Text>
       </Form.Group>
 
@@ -20,9 +26,12 @@ function BasicExample() {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
-      <Button variant="primary" type="submit">
+      <Button variant="primary" type="submit" onClick={() => {setMessage('Welcome to the website!'); setMessage2(emailAddress); alert('Account Email and Password have been entered!')}}>
         Submit
       </Button>
+      <br />
+      <br />
+      <h2>{message} {message2}</h2>
     </Form>
   );
 }

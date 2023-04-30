@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './homePage.css';
+import './allPageStyle.css';
 import BasicExample from '../components/Form';
 import LoginHead from './loginHeader';
 

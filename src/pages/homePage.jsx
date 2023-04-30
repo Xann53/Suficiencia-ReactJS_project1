@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './homePage.css';
+import './allPageStyle.css';
 import HomeHead from './homePageHeader';
 import HomeBody from './homePageBody';
 
