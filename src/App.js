@@ -5,23 +5,15 @@ import LoginPage from './pages/login';
 import RegistrationPage from './pages/registration';
 
 function App() {
-  let navRoute
-  switch (window.location.pathname) {
-    case "/":
-      navRoute = <Home />;
-      break;
-    case "/login":
-      navRoute = <LoginPage />;
-      break;
-    case "/registration":
-      navRoute = <RegistrationPage />;
-      break;
-  }
   return (
     <>
       <div>
         <Navbar />
-        {navRoute}
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/login' element={<LoginPage />} />
+          <Route path='/registration' element={<RegistrationPage />} />
+        </Routes>
       </div>
     </>
   );
